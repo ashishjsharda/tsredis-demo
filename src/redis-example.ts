@@ -4,8 +4,6 @@ import Redis from 'ioredis';
     const redis = new Redis();
 
     await redis.set('myKey', 'Hello, Redis with TypeScript!');
-
-    // Get the value of a key
     const value = await redis.get('myKey');
     console.log('Value:', value);
 
